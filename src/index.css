@@ -1,13 +1,119 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  min-height: 100vh;
+  background-color: #111111;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.parent {
+  position: absolute;
+  max-width: 550px;
+  width: 100%;
+  height: 770px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #23252c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* header component  */
+.profile-picture {
+  width: 317px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* info section  */
+.info-container {
+  text-align: center;
+}
+
+
+.info-job {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 30px 0;
+}
+.info-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 20px;
+  border-radius: 6px;
+}
+
+.mini-linkdin {
+  background-color: #5093e2;
+  color: white;
+}
+
+.mini-linkdin-logo {
+  width: 15px;
+  background-color: white;
+}
+
+/* Main Component  */
+.main-container {
+  padding: 21px 34px 24px 34px;
+  background-color: #1a1b21;
+  max-width: 317px;
+}
+
+/* About and Interests section  */
+
+.about-container,
+.interests-container {
+  margin-top: 20px;
+}
+
+.about-heading,
+.interests-heading {
+  
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.about-disc, 
+.interests-disc {
+
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+
+/* Footer component  */
+.footer {
+  padding: 20px 73px;
+  background-color: #161619;
+  border-radius: 0 0 10px 10px;
+  width: 317px;
+}
+
+.profile-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* footer logo section  */
+.user-links> img:hover {
+  background-color: blue;
 }
